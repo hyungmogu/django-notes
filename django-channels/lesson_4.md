@@ -1,7 +1,5 @@
 # Lesson 4 - Writing Web Socket Views
 
-## Routing
-
-## Consumers
+## STEP1 - Add Consumer
 
 
