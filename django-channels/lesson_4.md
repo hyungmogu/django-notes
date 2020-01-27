@@ -4,6 +4,7 @@
 - consumer accepts websocket connections
 - consumer is like a view/APIView in views.py but for web sockets
 
+    **Synchronous channel setup**
     // APP_NAME/consumer.py
     ```
     from channels.generic.websocket import WebsocketConsumer
