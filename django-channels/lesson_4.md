@@ -5,7 +5,7 @@
 - consumer is like a view/APIView in views.py but for web sockets
 
     **Synchronous channel setup**
-    // APP_NAME/consumer.py
+    // APP_NAME/consumers.py
     ```
     from channels.generic.websocket import WebsocketConsumer
     import json
@@ -57,8 +57,16 @@
         })
     ```
 
+## STEP3 - Add channel redis
 
-## STEP3 - Add channel layer
+    ```
+    pip install channels_redis==2.3.3
+    ```
+
+- Note: the version is to meet dependency requirements
+
+
+## STEP4 - Add channel layer
 - channel layer allows multiple consumers to talk to each other
     - i.e. opening multiple browser tabs, send message in one to make it appear in others
 
