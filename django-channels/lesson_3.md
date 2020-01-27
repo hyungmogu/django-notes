@@ -1,6 +1,5 @@
 # Lesson 3 - Getting the channels package installed and configured
 
-
 ## Installation
 
 1. Install Django channels
