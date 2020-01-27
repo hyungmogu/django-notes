@@ -4,8 +4,11 @@
 
 1. Install Django channels
     ```
-    pip install -U channels
+    pip install -U channels==2.1.0
     ```
+
+    - Note: most recent version of channels is incompatible with django 2.1.1
+    - Django 2.1.1 is recommended for AWS
 
 2. Add channels to app in setting
 
