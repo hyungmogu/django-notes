@@ -26,6 +26,7 @@
     ```
 
 ## STEP2 - Add route for web sockets
+- `AuthMiddlewareStack` replaces request of a view function with the currently authentiated user
 - NOTE: Add `/ws` to distinguish websocket connections from ordinary HTTP
 
     // APP_NAME/routing.py
@@ -53,4 +54,29 @@
                 )
             ),
         })
+    ```
+
+
+## STEP3 - Add channel layer
+- channel layer allows multiple consumers to talk to each other
+    - i.e. opening multiple browser tabs, send message in one to make it appear in others
+
+
+- First install channel_redis
+
+    ```
+        pip3 install channels_redis
+    ```
+
+- Second define channel layer with channel_redis (port 6379)
+
+    ```
+        CHANNEL_LAYERS = {
+            "default": {
+                "BACKEND": "channels_redis.core.RedisChannelLayer",
+                "CONFIG": {
+                    "hosts": [("localhost", 6379)],
+                },
+            },
+        }
     ```
