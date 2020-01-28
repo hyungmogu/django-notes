@@ -1,4 +1,4 @@
-# Lesson 3 - Getting the channels package installed and configured
+# Part 1 - Getting the channels package installed and configured
 
 ## Installation
 
